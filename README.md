@@ -37,6 +37,5 @@ mechanics with lower health to reward players for dodging/surviving this all.
 
 # Known Bugs
 Currently when the pong ball begins to move too fast it will phase through paddles and result in a point. This bug is
-likely caused by the way that I am checking for collision using pixel zones. This is a limitation of my knowledge at 
-this time and my choice of turtle to draw the game. If I return I will look into using another library to help draw
-and play the game. 
+likely caused by the way that I am checking for collision using pixel zones. This is a limitation of my knowledge of
+the turtle library. If I return I will look into using another library to help draw and play the game. 
