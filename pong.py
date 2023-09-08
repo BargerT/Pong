@@ -6,7 +6,7 @@ h = 600
 w = 1000
 
 ai_speed = 1
-ai_predict = False
+ai_difficulty = 1
 
 # Create Screen
 sc = turtle.Screen()
@@ -20,27 +20,32 @@ var = tk.IntVar()
 # Button Click Functionality
 def easyClick():
     global ai_speed
+    global ai_difficulty
     ai_speed = 0.2
+    ai_difficulty = 0.5
     var.set(1)
 
 
 def normalClick():
     global ai_speed
-    ai_speed = 1
+    global ai_difficulty
+    ai_speed = 0.8
+    ai_difficulty = 1
     var.set(1)
 
 
 def hardClick():
     global ai_speed
-    ai_speed = 2
+    global ai_difficulty
+    ai_difficulty = 2
     var.set(1)
 
 
 def impossibleClick():
     global ai_speed
-    global ai_predict
-    ai_speed = 5
-    ai_predict = True
+    global ai_difficulty
+    ai_speed = 1.5
+    ai_difficulty = 4
     var.set(1)
 
 
@@ -73,7 +78,7 @@ left_p = turtle.Turtle()
 left_p.speed(0)
 left_p.shape("square")
 left_p.color("white")
-left_p.shapesize(stretch_wid=6, stretch_len=2)
+left_p.shapesize(stretch_wid=6 * ai_difficulty, stretch_len=2)
 left_p.penup()
 left_p.goto(-((w / 2) - 100), 0)
 
