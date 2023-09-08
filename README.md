@@ -1,5 +1,5 @@
 # Pong
-Pong built with Python implementing various levels of opponent difficulty. 
+Pong built with Python implementing various levels of opponent difficulty. This project was built using Python 3.10.11
 
 # Installation
 Make a clone of this repository to your device or download the pong.exe file found in the distribution folder.
